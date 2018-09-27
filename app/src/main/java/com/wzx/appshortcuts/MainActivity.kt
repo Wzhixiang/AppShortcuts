@@ -20,6 +20,8 @@ import android.view.MenuItem
 import android.view.View
 
 /**
+ * 通过Menu触发添加动态快捷方式
+ *
  * 关于shortcut（快捷方式）：
  * 1.只能显示4个快捷方式，并且只能添加5个，继续添加会替换最后一个
  * 2.静态快捷方式不能删除
