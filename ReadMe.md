@@ -1,5 +1,8 @@
 ### AppShortcuts（快捷方式）
 
+#### 效果
+![AppShortcuts](https://github.com/Wzhixiang/AppShortcuts/blob/master/ScreenCapture/device-2018-09-27-165107.png)
+
         需要在Android 7.1及以上版本才能正常使用
         
         快捷方式注册可分类两种：
