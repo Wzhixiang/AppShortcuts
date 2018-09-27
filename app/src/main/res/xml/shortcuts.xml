@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        enabled：是否启用快捷方式（可选）
+        icon：图标（可选）
+        shortcutDisabledMessage：禁用快捷方式后，当触发该快捷方式会以toast提示这个内容（可选）
+        shortcutId：快捷方式唯一编号（必填）
+        shortcutLongLabel：快捷方式简述（可选）
+        shortcutShortLabel：快捷方式详细描述（必填）
+        intent：快捷方式Intent（必填）
+    -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutDisabledMessage="@string/open_app_disabled"
+        android:shortcutId="open_app"
+        android:shortcutLongLabel="@string/open_app_long"
+        android:shortcutShortLabel="@string/open_app_short">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.wzx.appshortcuts.MainActivity"
+            android:targetPackage="com.wzx.appshortcuts" />
+
+        <categories android:name="android.shortcut.conversation" />
+
+    </shortcut>
+
+</shortcuts>

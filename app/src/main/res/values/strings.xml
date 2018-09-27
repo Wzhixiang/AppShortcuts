@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppShortcuts</string>
+
+    <string name="open_app_disabled">快捷方式不可用</string>
+    <string name="open_app_long">启动APP</string>
+    <string name="open_app_short">启动</string>
+</resources>

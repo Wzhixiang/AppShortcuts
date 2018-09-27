@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="abcdefghijklmnopqrstuvwsyz"
+        android:hint="请输入shortcutid"
+        android:maxLines="1"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_shortLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入shortLabel"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+    <EditText
+        android:id="@+id/et_longLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入longLabel"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/et_shortLabel" />
+
+    <EditText
+        android:id="@+id/et_disablemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入disablemessage"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/et_longLabel" />
+
+    <EditText
+        android:id="@+id/et_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入rank"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/et_disablemessage" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        app:layout_constraintTop_toBottomOf="@+id/et_rank" />
+
+    <Button
+        android:id="@+id/btn_disable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="禁用"
+        app:layout_constraintLeft_toRightOf="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/et_rank" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        app:layout_constraintLeft_toRightOf="@+id/btn_disable"
+        app:layout_constraintTop_toBottomOf="@+id/et_rank" />
+
+</android.support.constraint.ConstraintLayout>
